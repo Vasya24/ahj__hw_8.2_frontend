@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AHJ__HW_8.1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
 </head>
 <body>
-  <div id="wrapper">
-    
+  <div class="container">
+    <form id="login_form" class="login-form login-form-active" name="login" novalidate>
+      <h1 class="form-header">Выберите псевдоним</h1>
+      <input type="text" id="login_input" class="login-input">
+      <span class="tooltip">Данный логин занят</span>
+      <button class="login-button" id="login_button" type="submit">Продолжить</button>
+    </form>
+    <div class="chat">
+      <div id="users" class="users">
+      </div>
+      <div id="messages" class="messages">
+        <div id="messages-list" class="messages_list">
+        </div>
+        <input type="text" id="chat_input" class="chat-input" placeholder="Введите своё сообщение здесь">
+      </div>
+    </div>
   </div>
 </body>
 </html>
